@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="CiP-1w-I4B" customClass="MXBaseCell" customModule="FebulaTunesTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CiP-1w-I4B" id="rsj-Is-ktp">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ka2-VN-sYB">
+                        <rect key="frame" x="0.0" y="17" width="426" height="100"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pFt-g0-PUV">
+                                <rect key="frame" x="8" y="0.0" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Hwr-A6-IlU"/>
+                                    <constraint firstAttribute="height" constant="100" id="QaK-8M-gvg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFU-tC-shj">
+                                <rect key="frame" x="116" y="0.0" width="302" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="kpJ-BB-buJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQP-Vq-iPx" customClass="RoundedButton" customModule="FebulaTunesTest" customModuleProvider="target">
+                                <rect key="frame" x="297" y="66" width="121" height="26"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="okK-nY-pB2"/>
+                                    <constraint firstAttribute="width" constant="121" id="u9d-Sf-SBc"/>
+                                </constraints>
+                                <state key="normal" title="Add to store"/>
+                                <connections>
+                                    <action selector="addToStoreAction:" destination="CiP-1w-I4B" eventType="touchUpInside" id="PK5-DL-nYx"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accept.png" translatesAutoresizingMaskIntoConstraints="NO" id="ngY-fR-fl1">
+                                <rect key="frame" x="239" y="50" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y8B-OE-oUF"/>
+                                    <constraint firstAttribute="width" constant="50" id="hYd-SK-7yU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gQP-Vq-iPx" secondAttribute="bottom" constant="8" id="HDP-VI-9T5"/>
+                            <constraint firstAttribute="trailing" secondItem="ngY-fR-fl1" secondAttribute="trailing" constant="137" id="HdZ-Eu-Wuc"/>
+                            <constraint firstAttribute="trailing" secondItem="yFU-tC-shj" secondAttribute="trailing" constant="8" id="Lx6-ba-OaE"/>
+                            <constraint firstItem="yFU-tC-shj" firstAttribute="top" secondItem="Ka2-VN-sYB" secondAttribute="top" id="Np7-eq-sGZ"/>
+                            <constraint firstAttribute="height" constant="100" id="YMF-1T-arx"/>
+                            <constraint firstItem="pFt-g0-PUV" firstAttribute="leading" secondItem="Ka2-VN-sYB" secondAttribute="leadingMargin" id="cE3-yi-3dq"/>
+                            <constraint firstAttribute="trailing" secondItem="gQP-Vq-iPx" secondAttribute="trailing" constant="8" id="fbg-lj-wlh"/>
+                            <constraint firstItem="pFt-g0-PUV" firstAttribute="top" secondItem="Ka2-VN-sYB" secondAttribute="topMargin" constant="-8" id="lcJ-x4-yVR"/>
+                            <constraint firstItem="ngY-fR-fl1" firstAttribute="top" secondItem="Ka2-VN-sYB" secondAttribute="top" constant="50" id="voA-Jp-ZY7"/>
+                            <constraint firstItem="yFU-tC-shj" firstAttribute="leading" secondItem="pFt-g0-PUV" secondAttribute="trailing" constant="8" id="wXL-Zt-Q59"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ka2-VN-sYB" secondAttribute="trailing" id="0nT-ji-QS4"/>
+                    <constraint firstItem="Ka2-VN-sYB" firstAttribute="top" secondItem="rsj-Is-ktp" secondAttribute="top" constant="17" id="UeX-4V-ha5"/>
+                    <constraint firstItem="Ka2-VN-sYB" firstAttribute="leading" secondItem="rsj-Is-ktp" secondAttribute="leading" id="sGT-g3-eq7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="labelName" destination="yFU-tC-shj" id="pDX-ru-0PI"/>
+                <outlet property="matchedView" destination="ngY-fR-fl1" id="iAC-9E-dRa"/>
+                <outlet property="storeButton" destination="gQP-Vq-iPx" id="ysg-lJ-fiu"/>
+                <outlet property="thumbImageView" destination="pFt-g0-PUV" id="iZg-RC-w5a"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="48.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="accept.png" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA6611D41E8274730085A860 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA6611D31E8274730085A860 /* bell.mp3 */; };
+		DA6611D61E8284020085A860 /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6611D51E8284020085A860 /* ViewController+Alert.swift */; };
+		DA6611D81E8285650085A860 /* UserDefaultsMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6611D71E8285650085A860 /* UserDefaultsMemento.swift */; };
+		DA7BF1D91E81182400B1305F /* ViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BF1D81E81182400B1305F /* ViewController+CoreData.swift */; };
+		DA7BF1E51E81313400B1305F /* TunesUnit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BF1E31E81313400B1305F /* TunesUnit+CoreDataClass.swift */; };
+		DA7BF1E61E81313400B1305F /* TunesUnit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BF1E41E81313400B1305F /* TunesUnit+CoreDataProperties.swift */; };
+		DA7BF1E91E815ABC00B1305F /* StoreViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BF1E81E815ABC00B1305F /* StoreViewController+CoreData.swift */; };
+		DA7BF1EB1E816DE500B1305F /* BaseCell+DeConvertFromCData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BF1EA1E816DE500B1305F /* BaseCell+DeConvertFromCData.swift */; };
+		DA7BF1ED1E81843B00B1305F /* accept.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7BF1EC1E81843B00B1305F /* accept.png */; };
+		DAF275D01E7FDDEF00C3A8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF275CF1E7FDDEF00C3A8AF /* AppDelegate.swift */; };
+		DAF275D21E7FDDEF00C3A8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF275D11E7FDDEF00C3A8AF /* ViewController.swift */; };
+		DAF275D51E7FDDEF00C3A8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF275D31E7FDDEF00C3A8AF /* Main.storyboard */; };
+		DAF275D81E7FDDEF00C3A8AF /* FebulaTunesTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAF275D61E7FDDEF00C3A8AF /* FebulaTunesTest.xcdatamodeld */; };
+		DAF275DA1E7FDDEF00C3A8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF275D91E7FDDEF00C3A8AF /* Assets.xcassets */; };
+		DAF275DD1E7FDDEF00C3A8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF275DB1E7FDDEF00C3A8AF /* LaunchScreen.storyboard */; };
+		DAF275E81E7FDDEF00C3A8AF /* FebulaTunesTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF275E71E7FDDEF00C3A8AF /* FebulaTunesTestTests.swift */; };
+		DAF275F31E7FDDEF00C3A8AF /* FebulaTunesTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF275F21E7FDDEF00C3A8AF /* FebulaTunesTestUITests.swift */; };
+		DAF276021E7FE73A00C3A8AF /* iTunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276011E7FE73A00C3A8AF /* iTunes.swift */; };
+		DAF276041E7FE79F00C3A8AF /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276031E7FE79F00C3A8AF /* Media.swift */; };
+		DAF276061E7FE7D300C3A8AF /* SearchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276051E7FE7D300C3A8AF /* SearchError.swift */; };
+		DAF276081E7FE80900C3A8AF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276071E7FE80900C3A8AF /* Result.swift */; };
+		DAF2760B1E7FE8E400C3A8AF /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2760A1E7FE8E400C3A8AF /* Entity.swift */; };
+		DAF2760D1E7FE93900C3A8AF /* EntityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2760C1E7FE93900C3A8AF /* EntityType.swift */; };
+		DAF276111E7FE9A600C3A8AF /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276101E7FE9A600C3A8AF /* Options.swift */; };
+		DAF276131E7FEA1F00C3A8AF /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276121E7FEA1F00C3A8AF /* Country.swift */; };
+		DAF276151E7FEB2100C3A8AF /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276141E7FEB2100C3A8AF /* Language.swift */; };
+		DAF276181E7FEB9000C3A8AF /* Dictionary+Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276171E7FEB9000C3A8AF /* Dictionary+Merge.swift */; };
+		DAF2761A1E7FEE1A00C3A8AF /* String+URLEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276191E7FEE1A00C3A8AF /* String+URLEscaped.swift */; };
+		DAF2761E1E800E7300C3A8AF /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAF2761D1E800E7300C3A8AF /* logo.jpg */; };
+		DAF276231E8033D200C3A8AF /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276221E8033D200C3A8AF /* BaseCell.swift */; };
+		DAF276251E80372100C3A8AF /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF276241E80372100C3A8AF /* BaseCell.xib */; };
+		DAF2762A1E8064B800C3A8AF /* PopupSearchMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF276291E8064B800C3A8AF /* PopupSearchMenu.swift */; };
+		DAF2762C1E8069A100C3A8AF /* PopupSearchMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF2762B1E8069A100C3A8AF /* PopupSearchMenu.xib */; };
+		DAF2762E1E806C5700C3A8AF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2762D1E806C5700C3A8AF /* RoundedButton.swift */; };
+		DAF276301E8078A700C3A8AF /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2762F1E8078A700C3A8AF /* StoreViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAF275E41E7FDDEF00C3A8AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF275C41E7FDDEE00C3A8AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF275CB1E7FDDEF00C3A8AF;
+			remoteInfo = FebulaTunesTest;
+		};
+		DAF275EF1E7FDDEF00C3A8AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF275C41E7FDDEE00C3A8AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF275CB1E7FDDEF00C3A8AF;
+			remoteInfo = FebulaTunesTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA6611D31E8274730085A860 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		DA6611D51E8284020085A860 /* ViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
+		DA6611D71E8285650085A860 /* UserDefaultsMemento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsMemento.swift; sourceTree = "<group>"; };
+		DA7BF1D81E81182400B1305F /* ViewController+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CoreData.swift"; sourceTree = "<group>"; };
+		DA7BF1E31E81313400B1305F /* TunesUnit+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TunesUnit+CoreDataClass.swift"; path = "../TunesUnit+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DA7BF1E41E81313400B1305F /* TunesUnit+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TunesUnit+CoreDataProperties.swift"; path = "../TunesUnit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DA7BF1E81E815ABC00B1305F /* StoreViewController+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreViewController+CoreData.swift"; sourceTree = "<group>"; };
+		DA7BF1EA1E816DE500B1305F /* BaseCell+DeConvertFromCData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseCell+DeConvertFromCData.swift"; sourceTree = "<group>"; };
+		DA7BF1EC1E81843B00B1305F /* accept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accept.png; sourceTree = "<group>"; };
+		DAF275CC1E7FDDEF00C3A8AF /* FebulaTunesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FebulaTunesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF275CF1E7FDDEF00C3A8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAF275D11E7FDDEF00C3A8AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAF275D41E7FDDEF00C3A8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAF275D71E7FDDEF00C3A8AF /* FebulaTunesTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FebulaTunesTest.xcdatamodel; sourceTree = "<group>"; };
+		DAF275D91E7FDDEF00C3A8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAF275DC1E7FDDEF00C3A8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAF275DE1E7FDDEF00C3A8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF275E31E7FDDEF00C3A8AF /* FebulaTunesTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FebulaTunesTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF275E71E7FDDEF00C3A8AF /* FebulaTunesTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FebulaTunesTestTests.swift; sourceTree = "<group>"; };
+		DAF275E91E7FDDEF00C3A8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF275EE1E7FDDEF00C3A8AF /* FebulaTunesTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FebulaTunesTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF275F21E7FDDEF00C3A8AF /* FebulaTunesTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FebulaTunesTestUITests.swift; sourceTree = "<group>"; };
+		DAF275F41E7FDDEF00C3A8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF276011E7FE73A00C3A8AF /* iTunes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunes.swift; sourceTree = "<group>"; };
+		DAF276031E7FE79F00C3A8AF /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		DAF276051E7FE7D300C3A8AF /* SearchError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchError.swift; sourceTree = "<group>"; };
+		DAF276071E7FE80900C3A8AF /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		DAF2760A1E7FE8E400C3A8AF /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		DAF2760C1E7FE93900C3A8AF /* EntityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityType.swift; sourceTree = "<group>"; };
+		DAF276101E7FE9A600C3A8AF /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		DAF276121E7FEA1F00C3A8AF /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		DAF276141E7FEB2100C3A8AF /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		DAF276171E7FEB9000C3A8AF /* Dictionary+Merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Merge.swift"; sourceTree = "<group>"; };
+		DAF276191E7FEE1A00C3A8AF /* String+URLEscaped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URLEscaped.swift"; sourceTree = "<group>"; };
+		DAF2761D1E800E7300C3A8AF /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		DAF276221E8033D200C3A8AF /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		DAF276241E80372100C3A8AF /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCell.xib; sourceTree = "<group>"; };
+		DAF276291E8064B800C3A8AF /* PopupSearchMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupSearchMenu.swift; sourceTree = "<group>"; };
+		DAF2762B1E8069A100C3A8AF /* PopupSearchMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSearchMenu.xib; sourceTree = "<group>"; };
+		DAF2762D1E806C5700C3A8AF /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		DAF2762F1E8078A700C3A8AF /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAF275C91E7FDDEF00C3A8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF275E01E7FDDEF00C3A8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF275EB1E7FDDEF00C3A8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA6611D21E82730E0085A860 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				DA6611D31E8274730085A860 /* bell.mp3 */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		DA7BF1E71E81314000B1305F /* CoreData SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DA7BF1E31E81313400B1305F /* TunesUnit+CoreDataClass.swift */,
+				DA7BF1E41E81313400B1305F /* TunesUnit+CoreDataProperties.swift */,
+			);
+			name = "CoreData SubClasses";
+			sourceTree = "<group>";
+		};
+		DAF275C31E7FDDEE00C3A8AF = {
+			isa = PBXGroup;
+			children = (
+				DAF275CE1E7FDDEF00C3A8AF /* FebulaTunesTest */,
+				DAF275E61E7FDDEF00C3A8AF /* FebulaTunesTestTests */,
+				DAF275F11E7FDDEF00C3A8AF /* FebulaTunesTestUITests */,
+				DAF275CD1E7FDDEF00C3A8AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAF275CD1E7FDDEF00C3A8AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAF275CC1E7FDDEF00C3A8AF /* FebulaTunesTest.app */,
+				DAF275E31E7FDDEF00C3A8AF /* FebulaTunesTestTests.xctest */,
+				DAF275EE1E7FDDEF00C3A8AF /* FebulaTunesTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAF275CE1E7FDDEF00C3A8AF /* FebulaTunesTest */ = {
+			isa = PBXGroup;
+			children = (
+				DAF275CF1E7FDDEF00C3A8AF /* AppDelegate.swift */,
+				DAF275D11E7FDDEF00C3A8AF /* ViewController.swift */,
+				DAF2762F1E8078A700C3A8AF /* StoreViewController.swift */,
+				DAF275D31E7FDDEF00C3A8AF /* Main.storyboard */,
+				DAF275D91E7FDDEF00C3A8AF /* Assets.xcassets */,
+				DAF275DB1E7FDDEF00C3A8AF /* LaunchScreen.storyboard */,
+				DAF275DE1E7FDDEF00C3A8AF /* Info.plist */,
+				DAF275D61E7FDDEF00C3A8AF /* FebulaTunesTest.xcdatamodeld */,
+				DA6611D21E82730E0085A860 /* Sound */,
+				DA7BF1E71E81314000B1305F /* CoreData SubClasses */,
+				DAF276281E80645000C3A8AF /* SearchPoUp */,
+				DAF2761F1E80333600C3A8AF /* TableViewCell */,
+				DAF2761C1E800E5A00C3A8AF /* Images */,
+				DAF2760F1E7FE97000C3A8AF /* Options */,
+				DAF276001E7FE6BF00C3A8AF /* Sources */,
+				DAF276161E7FEB4800C3A8AF /* Extensions */,
+				DAF276091E7FE8C600C3A8AF /* Entity */,
+			);
+			path = FebulaTunesTest;
+			sourceTree = "<group>";
+		};
+		DAF275E61E7FDDEF00C3A8AF /* FebulaTunesTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF275E71E7FDDEF00C3A8AF /* FebulaTunesTestTests.swift */,
+				DAF275E91E7FDDEF00C3A8AF /* Info.plist */,
+			);
+			path = FebulaTunesTestTests;
+			sourceTree = "<group>";
+		};
+		DAF275F11E7FDDEF00C3A8AF /* FebulaTunesTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF275F21E7FDDEF00C3A8AF /* FebulaTunesTestUITests.swift */,
+				DAF275F41E7FDDEF00C3A8AF /* Info.plist */,
+			);
+			path = FebulaTunesTestUITests;
+			sourceTree = "<group>";
+		};
+		DAF276001E7FE6BF00C3A8AF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DAF276011E7FE73A00C3A8AF /* iTunes.swift */,
+				DAF276031E7FE79F00C3A8AF /* Media.swift */,
+				DAF276051E7FE7D300C3A8AF /* SearchError.swift */,
+				DAF276071E7FE80900C3A8AF /* Result.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		DAF276091E7FE8C600C3A8AF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DAF2760A1E7FE8E400C3A8AF /* Entity.swift */,
+				DAF2760C1E7FE93900C3A8AF /* EntityType.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		DAF2760F1E7FE97000C3A8AF /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				DAF276101E7FE9A600C3A8AF /* Options.swift */,
+				DAF276121E7FEA1F00C3A8AF /* Country.swift */,
+				DAF276141E7FEB2100C3A8AF /* Language.swift */,
+			);
+			name = Options;
+			sourceTree = "<group>";
+		};
+		DAF276161E7FEB4800C3A8AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAF276171E7FEB9000C3A8AF /* Dictionary+Merge.swift */,
+				DAF276191E7FEE1A00C3A8AF /* String+URLEscaped.swift */,
+				DAF2762D1E806C5700C3A8AF /* RoundedButton.swift */,
+				DA7BF1D81E81182400B1305F /* ViewController+CoreData.swift */,
+				DA7BF1E81E815ABC00B1305F /* StoreViewController+CoreData.swift */,
+				DA7BF1EA1E816DE500B1305F /* BaseCell+DeConvertFromCData.swift */,
+				DA6611D51E8284020085A860 /* ViewController+Alert.swift */,
+				DA6611D71E8285650085A860 /* UserDefaultsMemento.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		DAF2761C1E800E5A00C3A8AF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DA7BF1EC1E81843B00B1305F /* accept.png */,
+				DAF2761D1E800E7300C3A8AF /* logo.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DAF2761F1E80333600C3A8AF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DAF276221E8033D200C3A8AF /* BaseCell.swift */,
+				DAF276241E80372100C3A8AF /* BaseCell.xib */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		DAF276281E80645000C3A8AF /* SearchPoUp */ = {
+			isa = PBXGroup;
+			children = (
+				DAF276291E8064B800C3A8AF /* PopupSearchMenu.swift */,
+				DAF2762B1E8069A100C3A8AF /* PopupSearchMenu.xib */,
+			);
+			name = SearchPoUp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAF275CB1E7FDDEF00C3A8AF /* FebulaTunesTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF275F71E7FDDEF00C3A8AF /* Build configuration list for PBXNativeTarget "FebulaTunesTest" */;
+			buildPhases = (
+				DAF275C81E7FDDEF00C3A8AF /* Sources */,
+				DAF275C91E7FDDEF00C3A8AF /* Frameworks */,
+				DAF275CA1E7FDDEF00C3A8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FebulaTunesTest;
+			productName = FebulaTunesTest;
+			productReference = DAF275CC1E7FDDEF00C3A8AF /* FebulaTunesTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAF275E21E7FDDEF00C3A8AF /* FebulaTunesTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF275FA1E7FDDEF00C3A8AF /* Build configuration list for PBXNativeTarget "FebulaTunesTestTests" */;
+			buildPhases = (
+				DAF275DF1E7FDDEF00C3A8AF /* Sources */,
+				DAF275E01E7FDDEF00C3A8AF /* Frameworks */,
+				DAF275E11E7FDDEF00C3A8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF275E51E7FDDEF00C3A8AF /* PBXTargetDependency */,
+			);
+			name = FebulaTunesTestTests;
+			productName = FebulaTunesTestTests;
+			productReference = DAF275E31E7FDDEF00C3A8AF /* FebulaTunesTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAF275ED1E7FDDEF00C3A8AF /* FebulaTunesTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF275FD1E7FDDEF00C3A8AF /* Build configuration list for PBXNativeTarget "FebulaTunesTestUITests" */;
+			buildPhases = (
+				DAF275EA1E7FDDEF00C3A8AF /* Sources */,
+				DAF275EB1E7FDDEF00C3A8AF /* Frameworks */,
+				DAF275EC1E7FDDEF00C3A8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF275F01E7FDDEF00C3A8AF /* PBXTargetDependency */,
+			);
+			name = FebulaTunesTestUITests;
+			productName = FebulaTunesTestUITests;
+			productReference = DAF275EE1E7FDDEF00C3A8AF /* FebulaTunesTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAF275C41E7FDDEE00C3A8AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Paul;
+				TargetAttributes = {
+					DAF275CB1E7FDDEF00C3A8AF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DAF275E21E7FDDEF00C3A8AF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAF275CB1E7FDDEF00C3A8AF;
+					};
+					DAF275ED1E7FDDEF00C3A8AF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAF275CB1E7FDDEF00C3A8AF;
+					};
+				};
+			};
+			buildConfigurationList = DAF275C71E7FDDEE00C3A8AF /* Build configuration list for PBXProject "FebulaTunesTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAF275C31E7FDDEE00C3A8AF;
+			productRefGroup = DAF275CD1E7FDDEF00C3A8AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAF275CB1E7FDDEF00C3A8AF /* FebulaTunesTest */,
+				DAF275E21E7FDDEF00C3A8AF /* FebulaTunesTestTests */,
+				DAF275ED1E7FDDEF00C3A8AF /* FebulaTunesTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAF275CA1E7FDDEF00C3A8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF2761E1E800E7300C3A8AF /* logo.jpg in Resources */,
+				DAF2762C1E8069A100C3A8AF /* PopupSearchMenu.xib in Resources */,
+				DAF275DD1E7FDDEF00C3A8AF /* LaunchScreen.storyboard in Resources */,
+				DAF276251E80372100C3A8AF /* BaseCell.xib in Resources */,
+				DAF275DA1E7FDDEF00C3A8AF /* Assets.xcassets in Resources */,
+				DA6611D41E8274730085A860 /* bell.mp3 in Resources */,
+				DA7BF1ED1E81843B00B1305F /* accept.png in Resources */,
+				DAF275D51E7FDDEF00C3A8AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF275E11E7FDDEF00C3A8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF275EC1E7FDDEF00C3A8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAF275C81E7FDDEF00C3A8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF275D21E7FDDEF00C3A8AF /* ViewController.swift in Sources */,
+				DAF275D01E7FDDEF00C3A8AF /* AppDelegate.swift in Sources */,
+				DAF276061E7FE7D300C3A8AF /* SearchError.swift in Sources */,
+				DA7BF1E51E81313400B1305F /* TunesUnit+CoreDataClass.swift in Sources */,
+				DAF275D81E7FDDEF00C3A8AF /* FebulaTunesTest.xcdatamodeld in Sources */,
+				DAF2760B1E7FE8E400C3A8AF /* Entity.swift in Sources */,
+				DAF276181E7FEB9000C3A8AF /* Dictionary+Merge.swift in Sources */,
+				DAF276081E7FE80900C3A8AF /* Result.swift in Sources */,
+				DAF2760D1E7FE93900C3A8AF /* EntityType.swift in Sources */,
+				DAF276131E7FEA1F00C3A8AF /* Country.swift in Sources */,
+				DAF276021E7FE73A00C3A8AF /* iTunes.swift in Sources */,
+				DA6611D81E8285650085A860 /* UserDefaultsMemento.swift in Sources */,
+				DAF276151E7FEB2100C3A8AF /* Language.swift in Sources */,
+				DAF2762E1E806C5700C3A8AF /* RoundedButton.swift in Sources */,
+				DA7BF1EB1E816DE500B1305F /* BaseCell+DeConvertFromCData.swift in Sources */,
+				DA7BF1E91E815ABC00B1305F /* StoreViewController+CoreData.swift in Sources */,
+				DA6611D61E8284020085A860 /* ViewController+Alert.swift in Sources */,
+				DA7BF1D91E81182400B1305F /* ViewController+CoreData.swift in Sources */,
+				DAF276111E7FE9A600C3A8AF /* Options.swift in Sources */,
+				DA7BF1E61E81313400B1305F /* TunesUnit+CoreDataProperties.swift in Sources */,
+				DAF2761A1E7FEE1A00C3A8AF /* String+URLEscaped.swift in Sources */,
+				DAF276301E8078A700C3A8AF /* StoreViewController.swift in Sources */,
+				DAF276231E8033D200C3A8AF /* BaseCell.swift in Sources */,
+				DAF276041E7FE79F00C3A8AF /* Media.swift in Sources */,
+				DAF2762A1E8064B800C3A8AF /* PopupSearchMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF275DF1E7FDDEF00C3A8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF275E81E7FDDEF00C3A8AF /* FebulaTunesTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF275EA1E7FDDEF00C3A8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF275F31E7FDDEF00C3A8AF /* FebulaTunesTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAF275E51E7FDDEF00C3A8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF275CB1E7FDDEF00C3A8AF /* FebulaTunesTest */;
+			targetProxy = DAF275E41E7FDDEF00C3A8AF /* PBXContainerItemProxy */;
+		};
+		DAF275F01E7FDDEF00C3A8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF275CB1E7FDDEF00C3A8AF /* FebulaTunesTest */;
+			targetProxy = DAF275EF1E7FDDEF00C3A8AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAF275D31E7FDDEF00C3A8AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF275D41E7FDDEF00C3A8AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAF275DB1E7FDDEF00C3A8AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF275DC1E7FDDEF00C3A8AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAF275F51E7FDDEF00C3A8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAF275F61E7FDDEF00C3A8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAF275F81E7FDDEF00C3A8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FebulaTunesTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Febula.FebulaTunesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DAF275F91E7FDDEF00C3A8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FebulaTunesTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Febula.FebulaTunesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DAF275FB1E7FDDEF00C3A8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FebulaTunesTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Febula.FebulaTunesTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FebulaTunesTest.app/FebulaTunesTest";
+			};
+			name = Debug;
+		};
+		DAF275FC1E7FDDEF00C3A8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FebulaTunesTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Febula.FebulaTunesTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FebulaTunesTest.app/FebulaTunesTest";
+			};
+			name = Release;
+		};
+		DAF275FE1E7FDDEF00C3A8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FebulaTunesTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Febula.FebulaTunesTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FebulaTunesTest;
+			};
+			name = Debug;
+		};
+		DAF275FF1E7FDDEF00C3A8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FebulaTunesTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Febula.FebulaTunesTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FebulaTunesTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAF275C71E7FDDEE00C3A8AF /* Build configuration list for PBXProject "FebulaTunesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF275F51E7FDDEF00C3A8AF /* Debug */,
+				DAF275F61E7FDDEF00C3A8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF275F71E7FDDEF00C3A8AF /* Build configuration list for PBXNativeTarget "FebulaTunesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF275F81E7FDDEF00C3A8AF /* Debug */,
+				DAF275F91E7FDDEF00C3A8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF275FA1E7FDDEF00C3A8AF /* Build configuration list for PBXNativeTarget "FebulaTunesTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF275FB1E7FDDEF00C3A8AF /* Debug */,
+				DAF275FC1E7FDDEF00C3A8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF275FD1E7FDDEF00C3A8AF /* Build configuration list for PBXNativeTarget "FebulaTunesTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF275FE1E7FDDEF00C3A8AF /* Debug */,
+				DAF275FF1E7FDDEF00C3A8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DAF275D61E7FDDEF00C3A8AF /* FebulaTunesTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAF275D71E7FDDEF00C3A8AF /* FebulaTunesTest.xcdatamodel */,
+			);
+			currentVersion = DAF275D71E7FDDEF00C3A8AF /* FebulaTunesTest.xcdatamodel */;
+			path = FebulaTunesTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DAF275C41E7FDDEE00C3A8AF /* Project object */;
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Ga-RX-l0J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mtJ-aJ-HCB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Ga-RX-l0J" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="4Iu-A8-nyG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2aL-ci-BQR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5b-OJ-hSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="-75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FebulaTunesTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hVe-XE-ls0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qe5-Db-51h">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3Av-yt-LCd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7Sn-zm-QcG"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyz-Db-Zc9" customClass="RoundedButton" customModule="FebulaTunesTest" customModuleProvider="target">
+                                <rect key="frame" x="294" y="586" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.63137254899999995" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="m02-ie-Usi"/>
+                                    <constraint firstAttribute="width" constant="60" id="wun-Zu-mhG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="STORE"/>
+                                <connections>
+                                    <action selector="goToStore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNL-6Y-mAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xyz-Db-Zc9" secondAttribute="bottom" constant="21" id="1mR-p1-25s"/>
+                            <constraint firstItem="hVe-XE-ls0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="22U-CJ-zvc"/>
+                            <constraint firstAttribute="trailing" secondItem="xyz-Db-Zc9" secondAttribute="trailing" constant="21" id="BH4-Wb-oFS"/>
+                            <constraint firstItem="Qe5-Db-51h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KXX-bb-xZg"/>
+                            <constraint firstAttribute="trailing" secondItem="Qe5-Db-51h" secondAttribute="trailing" id="LDf-nX-tYp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qe5-Db-51h" secondAttribute="bottom" id="Mz9-QY-Zr8"/>
+                            <constraint firstItem="hVe-XE-ls0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fAM-cc-wAI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hVe-XE-ls0" secondAttribute="bottom" id="l55-0L-ZnZ"/>
+                            <constraint firstAttribute="trailing" secondItem="hVe-XE-ls0" secondAttribute="trailing" id="p0b-Cc-hkF"/>
+                            <constraint firstItem="Qe5-Db-51h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="rUI-st-x1O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VLD-wc-pSX">
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="iYp-LJ-TW1">
+                            <color key="tintColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="searchAction:" destination="BYZ-38-t0r" id="mYb-zc-yfU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchButton" destination="iYp-LJ-TW1" id="Pzc-0z-J38"/>
+                        <outlet property="tableView" destination="Qe5-Db-51h" id="1aM-4C-zF3"/>
+                        <segue destination="Neb-Nn-aYZ" kind="show" identifier="goStore" id="aCa-75-0nV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.60000000000002" y="-75.112443778110944"/>
+        </scene>
+        <!--Store View Controller-->
+        <scene sceneID="zOj-gX-L8e">
+            <objects>
+                <viewController id="Neb-Nn-aYZ" customClass="StoreViewController" customModule="FebulaTunesTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LSD-Bd-QKe"/>
+                        <viewControllerLayoutGuide type="bottom" id="lvX-de-5bj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uzD-v9-UL8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ra9-Hv-BYC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rzC-yQ-Rl4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Neb-Nn-aYZ" id="cIC-2Q-aqS"/>
+                                    <outlet property="delegate" destination="Neb-Nn-aYZ" id="CFU-ps-gEF"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CHm-bA-6Vf">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6V-Km-44f" customClass="RoundedButton" customModule="FebulaTunesTest" customModuleProvider="target">
+                                <rect key="frame" x="295" y="70" width="79" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="4Gr-fY-4KH"/>
+                                    <constraint firstAttribute="height" constant="30" id="Y1n-ga-7oz"/>
+                                </constraints>
+                                <state key="normal" title="Clear All"/>
+                                <connections>
+                                    <action selector="clearAction:" destination="Neb-Nn-aYZ" eventType="touchUpInside" id="g9Q-Wm-XLh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rzC-yQ-Rl4" firstAttribute="leading" secondItem="uzD-v9-UL8" secondAttribute="leading" id="1nr-cv-Okd"/>
+                            <constraint firstItem="CHm-bA-6Vf" firstAttribute="centerY" secondItem="uzD-v9-UL8" secondAttribute="centerY" id="6Sw-wc-fgZ"/>
+                            <constraint firstItem="CHm-bA-6Vf" firstAttribute="centerX" secondItem="uzD-v9-UL8" secondAttribute="centerX" id="7uK-gU-Zch"/>
+                            <constraint firstAttribute="trailing" secondItem="Ra9-Hv-BYC" secondAttribute="trailing" id="JJ0-f1-Dfh"/>
+                            <constraint firstAttribute="trailing" secondItem="rzC-yQ-Rl4" secondAttribute="trailing" id="JZQ-jw-DXT"/>
+                            <constraint firstItem="lvX-de-5bj" firstAttribute="top" secondItem="rzC-yQ-Rl4" secondAttribute="bottom" id="KMd-c4-Iy6"/>
+                            <constraint firstItem="rzC-yQ-Rl4" firstAttribute="top" secondItem="LSD-Bd-QKe" secondAttribute="bottom" id="dWb-G9-2G0"/>
+                            <constraint firstItem="Q6V-Km-44f" firstAttribute="top" secondItem="uzD-v9-UL8" secondAttribute="topMargin" constant="70" id="ndg-q0-fnL"/>
+                            <constraint firstItem="Q6V-Km-44f" firstAttribute="trailing" secondItem="uzD-v9-UL8" secondAttribute="trailingMargin" constant="15" id="p7K-ZD-zAE"/>
+                            <constraint firstItem="lvX-de-5bj" firstAttribute="top" secondItem="Ra9-Hv-BYC" secondAttribute="bottom" id="pEj-bC-iLJ"/>
+                            <constraint firstItem="Ra9-Hv-BYC" firstAttribute="top" secondItem="uzD-v9-UL8" secondAttribute="top" id="rsc-jY-TQ3"/>
+                            <constraint firstItem="Ra9-Hv-BYC" firstAttribute="leading" secondItem="uzD-v9-UL8" secondAttribute="leading" id="yKc-Xe-k0S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clearButton" destination="Q6V-Km-44f" id="3UT-6w-zKt"/>
+                        <outlet property="indicator" destination="CHm-bA-6Vf" id="g73-yt-aK4"/>
+                        <outlet property="tableView" destination="rzC-yQ-Rl4" id="AsA-me-uGh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3y-R8-oZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583.2" y="-75.112443778110944"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.jpg" width="750" height="1334"/>
+    </resources>
+</document>
