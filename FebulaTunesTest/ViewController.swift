@@ -25,6 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   var isFirstLoad = true
   var sourceStr = "sm"
   @IBOutlet weak var searchButton: UIBarButtonItem!
+  var dateManager_C: DateManager = DateManager()
   
   //Mark: - Make two queues with higher priority against backGround: one for CoreData manipulations, another for UIImage conversions
   
@@ -39,6 +40,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   }
   
   override func viewDidAppear(_ animated: Bool) {
+    let dateTitle = dateManager_C.currentDate()    
+    self.title = dateTitle
     super.viewDidAppear(true)
     if isFirstLoad == false {
       tableView.reloadData()

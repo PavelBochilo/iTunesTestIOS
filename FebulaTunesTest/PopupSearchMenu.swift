@@ -69,7 +69,7 @@ class PopupSearchMenu: UIView {
     backView.alpha = 0
     textField.text = UserDefaults.standard.getSearchString()
     
-    UIView.animate(withDuration: 0.6, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+    UIView.animate(withDuration: 0.9, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
       self.backView.alpha = 1
     }) { _ in self.layoutIfNeeded() }
   }

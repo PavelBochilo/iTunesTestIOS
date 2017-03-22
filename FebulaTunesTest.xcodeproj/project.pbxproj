@@ -42,6 +42,8 @@
 		DAF2762C1E8069A100C3A8AF /* PopupSearchMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF2762B1E8069A100C3A8AF /* PopupSearchMenu.xib */; };
 		DAF2762E1E806C5700C3A8AF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2762D1E806C5700C3A8AF /* RoundedButton.swift */; };
 		DAF276301E8078A700C3A8AF /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF2762F1E8078A700C3A8AF /* StoreViewController.swift */; };
+		DAF8EFD11E82939C009448C1 /* DateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF8EFD01E82939C009448C1 /* DateManager.m */; };
+		DAF8EFD41E829B55009448C1 /* tunes_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF8EFD31E829B55009448C1 /* tunes_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,10 @@
 		DAF2762B1E8069A100C3A8AF /* PopupSearchMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSearchMenu.xib; sourceTree = "<group>"; };
 		DAF2762D1E806C5700C3A8AF /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		DAF2762F1E8078A700C3A8AF /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		DAF8EFCF1E82939C009448C1 /* FebulaTunesTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FebulaTunesTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		DAF8EFD01E82939C009448C1 /* DateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateManager.m; sourceTree = "<group>"; };
+		DAF8EFD21E8293D2009448C1 /* DateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateManager.h; sourceTree = "<group>"; };
+		DAF8EFD31E829B55009448C1 /* tunes_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tunes_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 				DAF275DB1E7FDDEF00C3A8AF /* LaunchScreen.storyboard */,
 				DAF275DE1E7FDDEF00C3A8AF /* Info.plist */,
 				DAF275D61E7FDDEF00C3A8AF /* FebulaTunesTest.xcdatamodeld */,
+				DAF8EFCE1E82933C009448C1 /* Objective */,
 				DA6611D21E82730E0085A860 /* Sound */,
 				DA7BF1E71E81314000B1305F /* CoreData SubClasses */,
 				DAF276281E80645000C3A8AF /* SearchPoUp */,
@@ -257,6 +264,7 @@
 		DAF2761C1E800E5A00C3A8AF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DAF8EFD31E829B55009448C1 /* tunes_logo.png */,
 				DA7BF1EC1E81843B00B1305F /* accept.png */,
 				DAF2761D1E800E7300C3A8AF /* logo.jpg */,
 			);
@@ -279,6 +287,16 @@
 				DAF2762B1E8069A100C3A8AF /* PopupSearchMenu.xib */,
 			);
 			name = SearchPoUp;
+			sourceTree = "<group>";
+		};
+		DAF8EFCE1E82933C009448C1 /* Objective */ = {
+			isa = PBXGroup;
+			children = (
+				DAF8EFCF1E82939C009448C1 /* FebulaTunesTest-Bridging-Header.h */,
+				DAF8EFD21E8293D2009448C1 /* DateManager.h */,
+				DAF8EFD01E82939C009448C1 /* DateManager.m */,
+			);
+			name = Objective;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +367,7 @@
 				TargetAttributes = {
 					DAF275CB1E7FDDEF00C3A8AF = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					DAF275E21E7FDDEF00C3A8AF = {
@@ -395,6 +414,7 @@
 				DAF275DA1E7FDDEF00C3A8AF /* Assets.xcassets in Resources */,
 				DA6611D41E8274730085A860 /* bell.mp3 in Resources */,
 				DA7BF1ED1E81843B00B1305F /* accept.png in Resources */,
+				DAF8EFD41E829B55009448C1 /* tunes_logo.png in Resources */,
 				DAF275D51E7FDDEF00C3A8AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +463,7 @@
 				DAF2761A1E7FEE1A00C3A8AF /* String+URLEscaped.swift in Sources */,
 				DAF276301E8078A700C3A8AF /* StoreViewController.swift in Sources */,
 				DAF276231E8033D200C3A8AF /* BaseCell.swift in Sources */,
+				DAF8EFD11E82939C009448C1 /* DateManager.m in Sources */,
 				DAF276041E7FE79F00C3A8AF /* Media.swift in Sources */,
 				DAF2762A1E8064B800C3A8AF /* PopupSearchMenu.swift in Sources */,
 			);
@@ -596,10 +617,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FebulaTunesTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Febula.FebulaTunesTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FebulaTunesTest/FebulaTunesTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -608,10 +632,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FebulaTunesTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Febula.FebulaTunesTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FebulaTunesTest/FebulaTunesTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
