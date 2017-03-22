@@ -10,6 +10,9 @@ import UIKit
 
 extension UserDefaults {
   
+  
+  //MARK: For saving and loading hard date
+  
   func saveSearchString(sString: String) {
     set(sString, forKey: "sString")
     synchronize()

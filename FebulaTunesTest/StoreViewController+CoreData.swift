@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import AVFoundation
+import AnotherFramework
 
 extension StoreViewController {
   
@@ -81,5 +82,4 @@ extension StoreViewController {
       self.tableView.isHidden = false
     }
   }
-  
 }

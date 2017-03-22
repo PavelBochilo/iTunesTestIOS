@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import AVFoundation
+import AnotherFramework
 
 class StoreViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
@@ -29,10 +30,12 @@ class StoreViewController: UIViewController, UITableViewDataSource, UITableViewD
     loadDataFromContainer()
   }
   
+  //MARK: - TableView delegating
+  
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cellId = String.init(format: "baseCell%d", indexPath.row)    
+    let cellId = String.init(format: "baseCell%d", indexPath.row)
     tableView.register(UINib(nibName: xibCellName, bundle: nil), forCellReuseIdentifier: cellId)
-    let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! MXBaseCell    
+    let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! MXBaseCell
     cell.configureCell(tunesData: uinitsArray[indexPath.row], viewController: self)
     return cell
   }
@@ -48,6 +51,7 @@ class StoreViewController: UIViewController, UITableViewDataSource, UITableViewD
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
   }
+  
   
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
@@ -75,6 +79,7 @@ class StoreViewController: UIViewController, UITableViewDataSource, UITableViewD
     self.present(alertController, animated: true, completion: nil)
   }
   
+  //MARK: - clear all objects from CoreData container
   func clearAllData() {
     DispatchQueue.main.async {
       let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -93,7 +98,13 @@ class StoreViewController: UIViewController, UITableViewDataSource, UITableViewD
         print("\(error)")
       }
     }
-    
-    
+  }
+
+  //MARK: - Go to the controller from another framework, called "AnotherFramework"
+  
+  @IBAction func anotherFrameWork(_ sender: Any) {
+    let sb = UIStoryboard (name: "StoryboardNew", bundle: Bundle(for: AnotherVC.self))
+    let vc = sb.instantiateInitialViewController()! as UIViewController
+    self.present(vc, animated: true, completion: nil)
   }
 }
